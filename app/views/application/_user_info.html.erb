@@ -7,10 +7,5 @@
 		<dd><%= current_user.domain %></dd>
 		<dt>Company</dt>
 		<dd><%= current_user.company.name %></dd>
-		
-	
-	 <%= link_to 'Sign_out', destroy_user_session_path, method: :delete %>
 </div>
-<%else%>
- <%= link_to 'Sign_in', new_user_session_path %>
 <% end %>
