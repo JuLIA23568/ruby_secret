@@ -3,7 +3,7 @@
 	
 	<% @documents.each do |document| %>
 
-	<h2><%= document.name %></h2>
+	<h2><%= link_to document.name, document %></h2>
 	<p><%= document.company.name %></p>
 	<% end %>
 
