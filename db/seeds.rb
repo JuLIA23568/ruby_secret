@@ -29,7 +29,7 @@ amazon = Company.create! name: 'Amazon', domain: 'amazon.com'
 	name = 'just second article'
 	technologies = ['At','BV', 'Streaming video']
 	mediums = ['in space', 'on a remote', 'for dog']
-	big_thing = "#{technologies.sample}#{mediums.sample}" 
+	big_thing = "#{technologies.sample} #{mediums.sample}" 
 	content = "the second article is something only #{company.name} can do #{big_thing}."
 	Document.create!(company:company, name:name, content:content)
 
